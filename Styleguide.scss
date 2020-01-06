@@ -1,0 +1,51 @@
+.sg-spacing {
+	&__size {
+		background: var(--color-primary);
+		height: 30px;
+	}
+}
+
+.sg-shadow {
+	background: #fff;
+	padding: var(--space-md);
+	min-height: 20px;
+}
+
+.sg-spacing,
+.sg-palette,
+.sg-font {
+	$parent: &;
+
+	border-radius: var(--radius);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+	margin: 0 0 var(--space-md) 0;
+
+	&__body {
+		padding: var(--space-md);
+
+		> * {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.sg-palette {
+	&__swatch {
+		min-height: 80px;
+	}
+}
+
+.sg-font {
+	$parent: &;
+
+	&__swatch {
+		padding: var(--space-md);
+		font-size: 40px;
+		background-color: #000;
+		color: #fff;
+		line-height: 1.1;
+	}
+}

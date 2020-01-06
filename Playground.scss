@@ -1,0 +1,49 @@
+.playground {
+	$parent: &;
+
+	clear: both;
+
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+
+	.form-field--buttons {
+		display: none;
+	}
+
+	&__main {
+		> form {
+			background-color: var(--color-contrast-lower);
+
+			padding: var(--component-padding);
+			border-radius: var(--radius-lg);
+
+			box-shadow: var(--shadow-lg);
+		}
+	}
+
+	&__component {
+		margin-top: var(--space-xl);
+		margin-bottom: var(--space-xl);
+
+		> .code {
+			margin-top: var(--space-lg);
+		}
+	}
+
+	&--fullwidth {
+		#{$parent}__component {
+			width: 100vw;
+			position: relative;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+		}
+	}
+}

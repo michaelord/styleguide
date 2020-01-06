@@ -1,0 +1,22 @@
+{
+	"name": "styleguide",
+	"private": true,
+	"description": "...",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/michaelord/styleguide.git"
+	},
+	"devDependencies": {},
+	"author": "michaelord",
+	"keywords": [],
+	"dependencies": {
+		"components/libs": "http://github.com/michaelord/libs.git",
+		"components/form": "http://github.com/michaelord/form.git",
+		"components/block": "http://github.com/michaelord/block.git",
+		"components/carousel": "http://github.com/michaelord/carousel.git",
+		"components/editable": "http://github.com/michaelord/editable.git",
+		"components/types": "http://github.com/michaelord/types.git"
+	}
+}

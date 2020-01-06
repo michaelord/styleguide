@@ -1,0 +1,5 @@
+.card {
+	&.tag-done {
+		box-shadow: var(--shadow-highlight);
+	}
+}
